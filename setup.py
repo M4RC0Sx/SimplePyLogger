@@ -5,7 +5,7 @@ with open('README.md', 'r') as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name='simplepylogger',
+    name='simplepylogg3r',
     description='Simple Python Logger package to easily manage custom loggers in Python projects.',
     long_description=long_description,
     author='M4RC0Sx',
