@@ -106,3 +106,49 @@ class ConsoleLogger(ISPLogger):
         ConsoleLogger.__logger.critical(msg)
 
 
+class FileLogger(ISPLogger):
+
+    __filename: str
+
+    @staticmethod
+    def configure(name: str, level: int = DEFAULT_LEVEL, fmt: str = DEFAULT_FORMAT,
+                  date_fmt: str = DEFAULT_DATE_FORMAT,
+                  filename: str = f'{datetime.now().strftime("%Y%m%d%H%M%S")}.log') -> None:
+
+        FileLogger.__name = name
+        FileLogger.__filename = filename
+
+        FileLogger.__logger = logging.getLogger(name)
+        FileLogger.__logger.setLevel(level)
+
+        formatter = logging.Formatter(fmt=fmt, datefmt=date_fmt)
+
+        FileLogger.__add_handlers(level, formatter)
+
+    @staticmethod
+    def __add_handlers(level: int, formatter: logging.Formatter) -> None:
+        stdout_handler = logging.StreamHandler(sys.stdout)
+        stdout_handler.setLevel(level)
+        stdout_handler.setFormatter(formatter)
+
+        file_handler = logging.FileHandler(FileLogger.__filename)
+        file_handler.setLevel(level)
+        file_handler.setFormatter(formatter)
+
+        FileLogger.__logger.addHandler(file_handler)
+        FileLogger.__logger.addHandler(stdout_handler)
+
+    def debug(msg: str) -> None:
+        FileLogger.__logger.debug(msg)
+
+    def info(msg: str):
+        FileLogger.__logger.info(msg)
+
+    def warning(msg: str):
+        FileLogger.__logger.warning(msg)
+
+    def error(msg: str):
+        FileLogger.__logger.error(msg)
+
+    def critical(msg: str):
+        FileLogger.__logger.critical(msg)
