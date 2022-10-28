@@ -4,6 +4,12 @@ import sys
 from datetime import datetime
 from typing import Optional
 
+
+DEFAULT_LEVEL = logging.INFO
+DEFAULT_FORMAT = '%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+DEFAULT_DATE_FORMAT = '%Y-%m-%d %H:%M:%S'
+
+
 class ISPLogger(metaclass=ABCMeta):
 
     __name: str
@@ -61,3 +67,42 @@ class ISPLogger(metaclass=ABCMeta):
     @abstractmethod
     def critical(msg: str) -> None:
         raise NotImplementedError
+
+
+class ConsoleLogger(ISPLogger):
+
+    @staticmethod
+    def configure(name: str, level: int = DEFAULT_LEVEL, fmt: str = DEFAULT_FORMAT,
+                  date_fmt: str = DEFAULT_DATE_FORMAT) -> None:
+
+        ConsoleLogger.__name = name
+        ConsoleLogger.__logger = logging.getLogger(name)
+        ConsoleLogger.__logger.setLevel(level)
+
+        formatter = logging.Formatter(fmt=fmt, datefmt=date_fmt)
+
+        ConsoleLogger.__add_handlers(level, formatter)
+
+    @staticmethod
+    def __add_handlers(level: int, formatter: logging.Formatter) -> None:
+        stdout_handler = logging.StreamHandler(sys.stdout)
+        stdout_handler.setLevel(level)
+        stdout_handler.setFormatter(formatter)
+        ConsoleLogger.__logger.addHandler(stdout_handler)
+
+    def debug(msg: str) -> None:
+        ConsoleLogger.__logger.debug(msg)
+
+    def info(msg: str):
+        ConsoleLogger.__logger.info(msg)
+
+    def warning(msg: str):
+        ConsoleLogger.__logger.warning(msg)
+
+    def error(msg: str):
+        ConsoleLogger.__logger.error(msg)
+
+    def critical(msg: str):
+        ConsoleLogger.__logger.critical(msg)
+
+
