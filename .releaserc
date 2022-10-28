@@ -7,13 +7,13 @@
         [
             "@semantic-release/commit-analyzer",
             {
-                "preset": "convetionalcommits"
+                "preset": "conventionalcommits"
             }
         ],
         [
             "@semantic-release/release-notes-generator",
             {
-                "preset": "convetionalcommits"
+                "preset": "conventionalcommits"
             }
         ],
         [
