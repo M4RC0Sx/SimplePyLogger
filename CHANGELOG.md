@@ -1,5 +1,12 @@
 # SimplePyLogger - Changelog
 
+## [1.2.0](https://github.com/M4RC0Sx/SimplePyLogger/compare/v1.1.0...v1.2.0) (2022-10-28)
+
+
+### Features
+
+* **setup:** update name to simplepylogg4r ([4c540ea](https://github.com/M4RC0Sx/SimplePyLogger/commit/4c540ea2ca224a378660adec3ffa168cc11f6165))
+
 ## [1.1.0](https://github.com/M4RC0Sx/SimplePyLogger/compare/v1.0.0...v1.1.0) (2022-10-28)
 
 
