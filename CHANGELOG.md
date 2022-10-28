@@ -1,5 +1,13 @@
 # SimplePyLogger - Changelog
 
+## [1.3.0](https://github.com/M4RC0Sx/SimplePyLogger/compare/v1.2.0...v1.3.0) (2022-10-28)
+
+
+### Features
+
+* **quality:** added sonarqube scan action ([0527633](https://github.com/M4RC0Sx/SimplePyLogger/commit/052763342708d78acbbc48e39afebd01eecfc2f5))
+* **readme:** display  quality badges on readme ([e7f6ced](https://github.com/M4RC0Sx/SimplePyLogger/commit/e7f6cedcf849a12e98a458ede7f91ccba5435483))
+
 ## [1.2.0](https://github.com/M4RC0Sx/SimplePyLogger/compare/v1.1.0...v1.2.0) (2022-10-28)
 
 
