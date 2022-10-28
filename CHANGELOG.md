@@ -1,5 +1,12 @@
 # SimplePyLogger - Changelog
 
+## [1.4.0](https://github.com/M4RC0Sx/SimplePyLogger/compare/v1.3.1...v1.4.0) (2022-10-28)
+
+
+### Features
+
+* **pypi:** set content type to text/markdown ([43b17f4](https://github.com/M4RC0Sx/SimplePyLogger/commit/43b17f4e11cbca44ccf87d7337534f7c27545ccf))
+
 ## [1.3.1](https://github.com/M4RC0Sx/SimplePyLogger/compare/v1.3.0...v1.3.1) (2022-10-28)
 
 
