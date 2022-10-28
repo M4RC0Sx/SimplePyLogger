@@ -90,19 +90,24 @@ class ConsoleLogger(ISPLogger):
         stdout_handler.setFormatter(formatter)
         ConsoleLogger.__logger.addHandler(stdout_handler)
 
+    @staticmethod
     def debug(msg: str) -> None:
         ConsoleLogger.__logger.debug(msg)
 
-    def info(msg: str):
+    @staticmethod
+    def info(msg: str) -> None:
         ConsoleLogger.__logger.info(msg)
 
-    def warning(msg: str):
+    @staticmethod
+    def warning(msg: str) -> None:
         ConsoleLogger.__logger.warning(msg)
 
-    def error(msg: str):
+    @staticmethod
+    def error(msg: str) -> None:
         ConsoleLogger.__logger.error(msg)
 
-    def critical(msg: str):
+    @staticmethod
+    def critical(msg: str) -> None:
         ConsoleLogger.__logger.critical(msg)
 
 
@@ -138,17 +143,22 @@ class FileLogger(ISPLogger):
         FileLogger.__logger.addHandler(file_handler)
         FileLogger.__logger.addHandler(stdout_handler)
 
+    @staticmethod
     def debug(msg: str) -> None:
         FileLogger.__logger.debug(msg)
 
-    def info(msg: str):
+    @staticmethod
+    def info(msg: str) -> None:
         FileLogger.__logger.info(msg)
 
-    def warning(msg: str):
+    @staticmethod
+    def warning(msg: str) -> None:
         FileLogger.__logger.warning(msg)
 
-    def error(msg: str):
+    @staticmethod
+    def error(msg: str) -> None:
         FileLogger.__logger.error(msg)
 
-    def critical(msg: str):
+    @staticmethod
+    def critical(msg: str) -> None:
         FileLogger.__logger.critical(msg)
