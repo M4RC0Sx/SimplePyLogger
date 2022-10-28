@@ -8,6 +8,7 @@ setuptools.setup(
     name='simplepylogg3r',
     description='Simple Python Logger package to easily manage custom loggers in Python projects.',
     long_description=long_description,
+    long_description_content_type='text/markdown',
     author='M4RC0Sx',
     python_requires='>=3.7',
     url='https://github.com/M4RC0Sx/SimplePyLogger',
