@@ -93,16 +93,16 @@ class ConsoleLogger(ISPLogger):
     def debug(msg: str) -> None:
         ConsoleLogger.__logger.debug(msg)
 
-    def info(msg: str):
+    def info(msg: str) -> None:
         ConsoleLogger.__logger.info(msg)
 
-    def warning(msg: str):
+    def warning(msg: str) -> None:
         ConsoleLogger.__logger.warning(msg)
 
-    def error(msg: str):
+    def error(msg: str) -> None:
         ConsoleLogger.__logger.error(msg)
 
-    def critical(msg: str):
+    def critical(msg: str) -> None:
         ConsoleLogger.__logger.critical(msg)
 
 
@@ -141,14 +141,14 @@ class FileLogger(ISPLogger):
     def debug(msg: str) -> None:
         FileLogger.__logger.debug(msg)
 
-    def info(msg: str):
+    def info(msg: str) -> None:
         FileLogger.__logger.info(msg)
 
-    def warning(msg: str):
+    def warning(msg: str) -> None:
         FileLogger.__logger.warning(msg)
 
-    def error(msg: str):
+    def error(msg: str) -> None:
         FileLogger.__logger.error(msg)
 
-    def critical(msg: str):
+    def critical(msg: str) -> None:
         FileLogger.__logger.critical(msg)
