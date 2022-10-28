@@ -1,5 +1,12 @@
 # SimplePyLogger - Changelog
 
+## [1.1.0](https://github.com/M4RC0Sx/SimplePyLogger/compare/v1.0.0...v1.1.0) (2022-10-28)
+
+
+### Features
+
+* **dummy:** dummy commit to test actions ([73df868](https://github.com/M4RC0Sx/SimplePyLogger/commit/73df868bd7cac92c70a58fc540bef4f8c84a5c3a))
+
 ## 1.0.0 (2022-10-28)
 
 
