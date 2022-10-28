@@ -1,5 +1,13 @@
 # SimplePyLogger - Changelog
 
+## [1.3.1](https://github.com/M4RC0Sx/SimplePyLogger/compare/v1.3.0...v1.3.1) (2022-10-28)
+
+
+### Bug Fixes
+
+* add staticmethod decorators where missing ([9625f92](https://github.com/M4RC0Sx/SimplePyLogger/commit/9625f92cc69f2e53e372d286c5137278689e36b8))
+* **typing:** add return typing to logger messages methods ([3e18dab](https://github.com/M4RC0Sx/SimplePyLogger/commit/3e18dabafdc4f0e5cadb266fa3383acc2b6aa336))
+
 ## [1.3.0](https://github.com/M4RC0Sx/SimplePyLogger/compare/v1.2.0...v1.3.0) (2022-10-28)
 
 
