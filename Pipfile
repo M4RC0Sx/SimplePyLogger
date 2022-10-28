@@ -5,6 +5,7 @@ name = "pypi"
 
 [packages]
 build = "*"
+setuptools = "*"
 
 [dev-packages]
 flake8 = "*"

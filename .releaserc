@@ -1,0 +1,40 @@
+{
+    "branches": [
+        "master",
+        "next"
+    ],
+    "plugins": [
+        [
+            "@semantic-release/commit-analyzer",
+            {
+                "preset": "convetionalcommits"
+            }
+        ],
+        [
+            "@semantic-release/release-notes-generator",
+            {
+                "preset": "convetionalcommits"
+            }
+        ],
+        [
+            "@semantic-release/changelog",
+            {
+                "changelogTitle": "# SimplePyLogger - Changelog"
+            }
+        ],
+        "@semantic-release/github",
+        [
+            "@semantic-release/git",
+            {
+                "assets": [
+                    "CHANGELOG.md",
+                    "setup.py",
+                    "setup.cfg"
+                ],
+                "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
+            }
+        ],
+        "@semantic-release-pypi"
+        
+    ]
+}
