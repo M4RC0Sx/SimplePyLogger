@@ -1,5 +1,8 @@
 # SimplePyLogger
 
+![Sonarqube Workflow](https://github.com/M4RC0Sx/SimplePyLogger/actions/workflows/sonarqube.yml/badge.svg)
+![Release Workflow](https://github.com/M4RC0Sx/SimplePyLogger/actions/workflows/release.yml/badge.svg)
+
 [![Quality Gate Status](https://sonarqube.fronteraware.com/api/project_badges/measure?project=simplepylogger&metric=alert_status&token=36002ab2fbeb64200ad17e2e68388cc15d5679da)](https://sonarqube.fronteraware.com/dashboard?id=simplepylogger)
 [![Reliability Rating](https://sonarqube.fronteraware.com/api/project_badges/measure?project=simplepylogger&metric=reliability_rating&token=36002ab2fbeb64200ad17e2e68388cc15d5679da)](https://sonarqube.fronteraware.com/dashboard?id=simplepylogger)
 [![Security Rating](https://sonarqube.fronteraware.com/api/project_badges/measure?project=simplepylogger&metric=security_rating&token=36002ab2fbeb64200ad17e2e68388cc15d5679da)](https://sonarqube.fronteraware.com/dashboard?id=simplepylogger)
