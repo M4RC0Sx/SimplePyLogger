@@ -1,5 +1,12 @@
 # SimplePyLogger - Changelog
 
+## [1.5.0](https://github.com/M4RC0Sx/SimplePyLogger/compare/v1.4.0...v1.5.0) (2022-10-31)
+
+
+### Features
+
+* **loggers:** added rotaing file logger ([7dff9d2](https://github.com/M4RC0Sx/SimplePyLogger/commit/7dff9d265c2e900b7853bacc69117f6540e2a650))
+
 ## [1.4.0](https://github.com/M4RC0Sx/SimplePyLogger/compare/v1.3.1...v1.4.0) (2022-10-28)
 
 
