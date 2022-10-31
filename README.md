@@ -70,7 +70,8 @@ FileLogger.critical('Critical Message')
 
 - [x] Add README docs.
 - [ ] Generate wiki docs.
-- [ ] Add Rotating File Logger.
+- [x] Add Rotating File Logger (time).
+- [ ] Add Rotating File Logger (size).
 - [ ] Implement unit tests.
 - [ ] Run unit tests on CI.
 
