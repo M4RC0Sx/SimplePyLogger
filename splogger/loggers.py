@@ -140,7 +140,7 @@ class FileLogger(ISPLogger):
         stdout_handler.setLevel(level)
         stdout_handler.setFormatter(formatter)
 
-        file_handler = TimedRotatingFileHandler(FileLogger.__filename, )
+        file_handler = logging.FileHandler(FileLogger.__filename)
         file_handler.setLevel(level)
         file_handler.setFormatter(formatter)
 
