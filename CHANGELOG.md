@@ -1,5 +1,12 @@
 # SimplePyLogger - Changelog
 
+## [1.5.1](https://github.com/M4RC0Sx/SimplePyLogger/compare/v1.5.0...v1.5.1) (2022-11-08)
+
+
+### Bug Fixes
+
+* **file-logger:** change handler type back to FileHandler ([1699e4e](https://github.com/M4RC0Sx/SimplePyLogger/commit/1699e4ee7c5bc1e98518697a04742bd248d77a11))
+
 ## [1.5.0](https://github.com/M4RC0Sx/SimplePyLogger/compare/v1.4.0...v1.5.0) (2022-10-31)
 
 
